@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agregar venta - EcoConsumo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="pantalla">
+
+<header class="encabezado">
+<a href="index.html" class="volver">⬅</a>
+<h1>Agregar venta</h1>
+<div class="perfil">♙</div>
+</header>
+
+<form class="formulario">
+
+<h2>Foto de su venta</h2>
+
+<label for="foto" class="subir-foto">
+<span class="camara">📷</span>
+<span>Insertar foto de producto</span>
+</label>
+<input type="file" id="foto" accept="image/*">
+
+<label for="nombre">Nombre de venta</label>
+<input
+type="text"
+id="nombre"
+placeholder="Nombre del producto"
+required
+>
+
+<label for="descripcion">Descripción</label>
+<textarea
+id="descripcion"
+placeholder="Descripción del producto"
+required
+></textarea>
+
+<label for="elaboracion">
+Fecha de elaboración (día que se hizo)
+</label>
+<input type="date" id="elaboracion" required>
+
+<label for="vencimiento">Fecha de vencimiento</label>
+<input type="date" id="vencimiento" required>
+
+<p class="aviso">
+⚠️ Revisá que la fecha de vencimiento sea correcta.
+</p>
+
+<label for="precio">Precio</label>
+<input
+type="number"
+id="precio"
+placeholder="Ingresá el precio"
+min="0"
+required
+>
+
+<label for="stock">Cantidad / Stock</label>
+<input
+type="number"
+id="stock"
+placeholder="Cantidad disponible"
+min="1"
+required
+>
+
+<button type="submit">Publicar venta</button>
+
+</form>
+
+</main>
+
+</body>
+</html>

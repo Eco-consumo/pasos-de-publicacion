@@ -1,0 +1,164 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 20px;
+background: #ffffff;
+color: #202b43;
+font-family: Arial, sans-serif;
+}
+
+.pantalla {
+width: 100%;
+max-width: 430px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.encabezado {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+margin-bottom: 35px;
+}
+
+.encabezado h1 {
+margin: 0;
+font-size: 23px;
+}
+
+.volver {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 43px;
+height: 43px;
+border-radius: 50%;
+background: #242424;
+color: #72d45d;
+font-size: 24px;
+text-decoration: none;
+}
+
+.perfil {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+background: #d8eeee;
+color: #276c48;
+font-size: 30px;
+}
+
+.formulario {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.formulario h2 {
+margin: 0 0 8px;
+text-align: center;
+font-size: 22px;
+font-weight: normal;
+}
+
+.formulario label {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.subir-foto {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 12px;
+min-height: 145px;
+padding: 20px;
+border-radius: 18px;
+background: #e7e4fb;
+color: #77718f;
+cursor: pointer;
+}
+
+.camara {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #c9c4f0;
+font-size: 28px;
+}
+
+#foto {
+display: none;
+}
+
+.formulario input,
+.formulario textarea {
+width: 100%;
+padding: 13px;
+border: 1px solid #dedcf2;
+border-radius: 8px;
+outline: none;
+background: #f0eefb;
+color: #202b43;
+font-family: Arial, sans-serif;
+font-size: 14px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+border-color: #359a55;
+}
+
+.formulario textarea {
+min-height: 85px;
+resize: vertical;
+}
+
+.aviso {
+margin: 0;
+color: #77718f;
+font-size: 11px;
+line-height: 1.5;
+}
+
+.formulario button {
+margin-top: 18px;
+padding: 15px;
+border: none;
+border-radius: 10px;
+background: #359a55;
+color: white;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.formulario button:hover {
+background: #287542;
+}
+
+@media (max-width: 400px) {
+body {
+padding: 10px;
+}
+
+.pantalla {
+padding: 12px;
+}
+
+.encabezado h1 {
+font-size: 20px;
+}
+}
